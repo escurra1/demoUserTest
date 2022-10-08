@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostListTableViewCell" id="KGk-i7-Jjw" customClass="PostListTableViewCell" customModule="CeibaSoftwareTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqb-Ru-tZg" customClass="View">
+                        <rect key="frame" x="10" y="5" width="300" height="140"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piD-bP-PhA" userLabel="ViewWidgest">
+                                <rect key="frame" x="10" y="6" width="284" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ket-uU-HNw">
+                                        <rect key="frame" x="10" y="5" width="264" height="18"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="13"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpO-xI-sQ3">
+                                        <rect key="frame" x="10" y="31" width="264" height="16.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hpO-xI-sQ3" secondAttribute="trailing" constant="10" id="33w-YH-j6C"/>
+                                    <constraint firstItem="Ket-uU-HNw" firstAttribute="top" secondItem="piD-bP-PhA" secondAttribute="top" constant="5" id="4Zs-ed-65x"/>
+                                    <constraint firstItem="hpO-xI-sQ3" firstAttribute="top" secondItem="Ket-uU-HNw" secondAttribute="bottom" constant="8" id="HbR-VT-9Y5"/>
+                                    <constraint firstItem="Ket-uU-HNw" firstAttribute="leading" secondItem="piD-bP-PhA" secondAttribute="leading" constant="10" id="W1d-ny-a6R"/>
+                                    <constraint firstItem="hpO-xI-sQ3" firstAttribute="centerX" secondItem="piD-bP-PhA" secondAttribute="centerX" id="lIL-3c-y5S"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ket-uU-HNw" secondAttribute="trailing" constant="10" id="qws-6u-OD6"/>
+                                    <constraint firstItem="hpO-xI-sQ3" firstAttribute="leading" secondItem="piD-bP-PhA" secondAttribute="leading" constant="10" id="yzV-Vv-DMW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="piD-bP-PhA" firstAttribute="leading" secondItem="zqb-Ru-tZg" secondAttribute="leading" constant="10" id="Eba-Tj-Joq"/>
+                            <constraint firstItem="piD-bP-PhA" firstAttribute="top" secondItem="zqb-Ru-tZg" secondAttribute="top" constant="6" id="FyJ-Iq-RuE"/>
+                            <constraint firstAttribute="bottom" secondItem="piD-bP-PhA" secondAttribute="bottom" constant="6" id="GNF-9h-rF6"/>
+                            <constraint firstAttribute="trailing" secondItem="piD-bP-PhA" secondAttribute="trailing" constant="6" id="HYR-Cg-rfm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zqb-Ru-tZg" secondAttribute="trailing" constant="10" id="7Ny-GP-Mgc"/>
+                    <constraint firstAttribute="bottom" secondItem="zqb-Ru-tZg" secondAttribute="bottom" constant="5" id="Oah-9a-mdp"/>
+                    <constraint firstItem="zqb-Ru-tZg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="pi1-Bb-XJl"/>
+                    <constraint firstItem="zqb-Ru-tZg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="sar-wf-Pbk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bodyLabel" destination="hpO-xI-sQ3" id="eJ4-2i-Vtt"/>
+                <outlet property="titleLabel" destination="Ket-uU-HNw" id="3Va-JX-vB1"/>
+            </connections>
+            <point key="canvasLocation" x="-23" y="21"/>
+        </tableViewCell>
+    </objects>
+</document>
