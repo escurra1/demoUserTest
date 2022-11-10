@@ -37,5 +37,4 @@ class PostListRouter: PostListRouterProtocol {
         }
         navigationController.pushViewController(viewController, animated: true)
     }
-    
 }
